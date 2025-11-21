@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== MENIU ===== */
+
+.menu-container {
+    margin-top: 40px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li a:link,
+.menu li a:visited {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li a:active {
+    background-color: grey;
+}
+
+/* ===== FORMULAR ===== */
+
+.container {
+    width: 50%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
