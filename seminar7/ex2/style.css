@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f1f1f1;
+    padding: 40px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Fiecare câmp */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px); /* Două coloane */
+    min-width: 250px;        /* Dacă spațiul e mic, se duc pe rânduri */
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+/* Butonul */
+.submit-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover */
+.submit-btn:hover {
+    background: #1a6ed8;
+}

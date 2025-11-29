@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de sah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ranks">
+            <span>8</span><span>7</span><span>6</span><span>5</span>
+            <span>4</span><span>3</span><span>2</span><span>1</span>
+        </div>
+
+        <div class="board">
+            <script>
+                for(let r=0; r<8; r++){
+                    for(let c=0; c<8; c++){
+                        const d=document.createElement("div");
+                        d.className="cell";
+                        if((r+c)%2===0) d.classList.add("light");
+                        else d.classList.add("dark");
+                        document.write(d.outerHTML);
+                    }
+                }
+            </script>
+        </div>
+
+        <div class="files">
+            <span>a</span><span>b</span><span>c</span><span>d</span>
+            <span>e</span><span>f</span><span>g</span><span>h</span>
+        </div>
+    </div>
+</body>
+</html>
